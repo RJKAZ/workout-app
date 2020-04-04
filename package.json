@@ -1,0 +1,25 @@
+{
+  "name": "workout-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RJKAZ/workout-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RJKAZ/workout-app/issues"
+  },
+  "homepage": "https://github.com/RJKAZ/workout-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0"
+  }
+}
