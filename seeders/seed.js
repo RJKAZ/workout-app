@@ -1,9 +1,9 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
+  useFindAndModify: true,
+  useNewUrlParser: true
 });
 
 let workoutSeed = [
@@ -145,3 +145,4 @@ db.Workout.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
